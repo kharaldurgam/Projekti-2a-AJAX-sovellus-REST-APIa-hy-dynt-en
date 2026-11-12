@@ -23,7 +23,7 @@ Tässä projektissa käytetään AJAX-tekniikkaa televisiosarjoja koskevien tiet
 - REST API
 - AJAX / fetch()
 
-## Missä Ai:ta käytetään
+## Missä käytin tekoälyän
 
 Käytin tekoälyä JavaScript-koodin kirjoittamiseen, kun koodi ei toiminut. Pystyin selvittämään, mikä oli vialla, ja samalla oppimaan uusia asioita.
 ```javascript
