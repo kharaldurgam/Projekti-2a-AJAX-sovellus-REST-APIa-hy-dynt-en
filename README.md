@@ -26,6 +26,7 @@ Tässä projektissa käytetään AJAX-tekniikkaa televisiosarjoja koskevien tiet
 
 Käytin tekoälyä JavaScript-koodin kirjoittamiseen, kun koodi ei toiminut. Pystyin selvittämään, mikä oli vialla, ja samalla oppimaan uusia asioita.
 ```javascript
+//this is where I used AI
 const shedule = document.getElementById("shedule");
             // Displaying the first 20 shows with their broadcast schedules
             shedule.innerHTML = shows.slice(0, 100).map(show => {
