@@ -47,12 +47,6 @@ const shedule = document.getElementById("shedule");
             }).join("");
 ```
 
-## Käyttöohjeet
-
-1. Avaa projekti selaimessa.
-2. Varmista, että rajapinta (API) on käytettävissä ja tavoitettavissa. 3. Lataa sivu tietojen hakemiseksi ja näyttämiseksi.
-4. Suorita sivu tarvittaessa paikallisen verkkopalvelimen, kuten Live Serverin, avulla.
-
-## Huomioita
-
-Tämä projekti syntyi samalla, kun opettelin työskentelemään rajapintojen (API) ja JavaScriptin parissa. Joitakin osia parannettiin tekoälytyökalujen avulla virheenkorjauksen ja uusien käsitteiden opettelun yhteydessä.
+## Linkki
+Github - https://github.com/kharaldurgam/Projekti-2a-AJAX-sovellus-REST-APIa-hy-dynt-en
+Publiced page on internet - 
