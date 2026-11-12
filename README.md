@@ -48,5 +48,6 @@ const shedule = document.getElementById("shedule");
 ```
 
 ## Linkki
-Github - https://github.com/kharaldurgam/Projekti-2a-AJAX-sovellus-REST-APIa-hy-dynt-en
-Publiced page on internet - 
+- Github - https://github.com/kharaldurgam/Projekti-2a-AJAX-sovellus-REST-APIa-hy-dynt-en
+
+- Publiced page on internet - https://project2durgam.netlify.app/
