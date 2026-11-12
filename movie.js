@@ -1,10 +1,17 @@
-/////movies api
+//////////////////////////////////////////////////////
+//1. movies api
+//////////////////////////////////////////////////////
 async function getMovies() {
     try {
+        //fetching data
         const response = await fetch("https://api.tvmaze.com/shows");
+        //error handling
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const shows = await response.json();
         const targetElement = document.getElementById("indexhtmlfile");
+                  ////////////////////////////////////////////
+                  ////HTML-rakenteen luominen
+                  ////////////////////////////////////////////
             // Displaying the first 100 shows from the array
             targetElement.innerHTML = shows.slice(0, 100).map(show => `
                 <div class="movie-card">
@@ -19,18 +26,25 @@ async function getMovies() {
         console.error("Error fetching shows:", error);
     }
 }
+//////////////////////////////
+//function calling
+//////////////////////////////
 getMovies();
 
-/////ghibliart 
+//////////////////////////////////////////////////////
+//2.ghibliart
+//////////////////////////////////////////////////////
   async function ghibliart() {
     try {
+        //fetching data 
         const response = await fetch("https://ghibliapi.vercel.app/films");
+        //error handling 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
         const movies = await response.json();
-
         const container = document.getElementById("container");
-       
+        ////////////////////////////////////////////
+        ////HTML-rakenteen luominen
+        ////////////////////////////////////////////
             container.innerHTML = movies.map(movie => `
                 <div class="movie-card">
                     <img class="poster" src="${movie.image}" alt="${movie.title}">
@@ -39,17 +53,19 @@ getMovies();
                     <p>Release Date: ${movie.release_date}</p>
                 </div>
             `).join("");
-        
-
     } catch (error) {
         console.error("Error fetching movies:", error);
     }
 }
 ghibliart();
-///shedule api 
+//////////////////////////////////////////////////////
+//3.shedule api 
+//////////////////////////////////////////////////////
   async function getSchedules() {
     try {
+        //fetching data
         const response = await fetch("https://api.tvmaze.com/shows");
+        //error handling
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const shows = await response.json();
         const shedule = document.getElementById("shedule");
@@ -60,6 +76,9 @@ ghibliart();
                 const days = show.schedule && show.schedule.days && show.schedule.days.length > 0 
                     ? show.schedule.days.join(", ") 
                     : "Various / Daily";
+                ////////////////////////////////////////////
+                ////HTML-rakenteen luominen
+                ////////////////////////////////////////////
                 return `
                     <div class="movie-card">
                         <img class="poster" src="${show.image ? show.image.medium : 'https://via.placeholder.com/300x450?text=No+Image'}" alt="${show.name}">
@@ -69,10 +88,8 @@ ghibliart();
                     </div>
                 `;
             }).join("");
-        
     } catch (error) {
         console.error("Error fetching schedules:", error);
     }
 }
-
 getSchedules();
