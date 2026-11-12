@@ -1,0 +1,127 @@
+@keyframes slideInDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0d0e;
+    animation: slideInDown 0.8s ease-out forwards;
+
+  }
+
+.header {
+    background-color: #0b0b0b;
+    border-bottom: 2px solid #3283BE;
+    padding: 15px 30px;
+  }
+
+.nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #d8ce17;
+    font-size: 20px;
+  }
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #dec20d;
+    color: #FEFDFE;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+.logo-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3283BE;
+  }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    color: #ffffff;
+  }
+
+.nav-link {
+    text-decoration: none;
+    color: #f4f6f7;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .nav-link:hover {
+  color: #4bfdfd;
+  background-color: #3283BE;
+  padding: 5px 10px;
+  border-radius: 5px;
+  }
+
+  #indexhtmlfile,#container, #shedule {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 50px;
+  }
+ 
+  /* Card Container */
+.movie-card {
+  background-color: #121212; /* Dark background matching the theme */
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Poster Image Styling */
+.movie-card .poster {
+  width: 100%;
+  height: 400px; /* Fixed height for consistency across cards */
+  object-fit: cover; /* Ensures the poster fills the box nicely without distorting */
+  display: block;
+  background-color: #1e1e1e; /* Placeholder background before image loads */
+}
+
+/* Content Padding & Text Styling */
+.movie-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 16px 8px 16px;
+  color: #ffffff;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 4px 16px;
+}
+
+/* Add a little bottom padding to finish the card */
+.movie-card p:last-of-type {
+  margin-bottom: 20px;
+}
