@@ -23,10 +23,9 @@ Tässä projektissa käytetään AJAX-tekniikkaa televisiosarjoja koskevien tiet
 - REST API
 - AJAX / fetch()
 
-## Esimerkkikoodi
+## Missä Ai:ta käytetään
 
-Tässä on esimerkki siitä, miten sovellus luo kortit elokuville tai sarjoille:
-
+Käytin tekoälyä JavaScript-koodin kirjoittamiseen, kun koodi ei toiminut. Pystyin selvittämään, mikä oli vialla, ja samalla oppimaan uusia asioita.
 ```javascript
 schedule.innerHTML = shows.slice(0, 100).map(show => {
 const time = show.schedule && show.schedule.time ? show.schedule.time : "Ei tiedossa";
