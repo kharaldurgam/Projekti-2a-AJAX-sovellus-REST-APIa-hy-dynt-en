@@ -12,7 +12,6 @@ Tässä projektissa käytetään AJAX-tekniikkaa televisiosarjoja koskevien tiet
 - Tietojen esittäminen näkymässä (dashboard-tyylinen asettelu)
 - Sarjojen julistekuvien näyttäminen
 - Esityspäivien ja kellonaikojen näyttäminen
-- Tiedot esittävästä kanavasta tai suoratoistopalvelusta
 - Dynaamisen sisällön luominen sivulle JavaScriptin avulla
 
 ## Käytetyt teknologiat
